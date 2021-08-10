@@ -8,7 +8,7 @@ Official: https://heroku.com
 Demo: https://herooneindex.herokuapp.com/  
 
 How to Install:   
-> ~~Click the button [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/qkqpttgf/OneManager-php) to Deploy a new app~~(`"We couldn't deploy your app because the source code violates the Salesforce Acceptable Use and External-Facing Services Policy."`)  
+> ~~Click the button [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/linux-jin/OneManager-php) to Deploy a new app~~(`"We couldn't deploy your app because the source code violates the Salesforce Acceptable Use and External-Facing Services Policy."`)  
 > Fork this project, create a heroku app, then turn to Deploy tab, deploy via connect to your github fork.   
 
 
