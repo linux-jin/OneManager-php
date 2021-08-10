@@ -702,7 +702,7 @@ return false;
 <!--LoginStart-->
 
 <!--LoginEnd-->
-<p class="text-center text-muted"><a href="https://github.com/linux-jin/OneManager-php" class="text-muted">OneManager</a> By Mistyhill Theme By Mistyhill</p>
+<p class="text-center text-muted"><a href="https://github.com/qkqpttgf/OneManager-php" class="text-muted">OneManager</a> By 逸笙 Theme By Nchyn</p>
     <p class="text-center" style="color: rgba(247,247,249,0);"><!--FootStr--></p>
 
 </body>
@@ -1788,7 +1788,16 @@ return false;
   new Waline({
     el: '#waline',
     path: location.pathname,
-    serverURL: 'https://waline-rosy.vercel.app'
+    serverURL: 'https://waline-rosy.vercel.app',
+    avatar: 'monsterid',
+    placeholder:"整两句...",
+    requiredFields:['nick'],
+    visitor: true,
+    emoji: [
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji'
+    ],
   });
 </script>
       <script>
