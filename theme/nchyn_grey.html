@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="<!--base_path-->favicon.ico" type="image/x-icon" />
     <link href="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="//cdn.bootcdn.net/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-
+    <script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
     <style>
     a {
         text-decoration: none;
@@ -424,6 +424,18 @@
         </div>
     </div>
 <!--FootomfEnd-->
+<!--WalineStart-->
+    <div class="container text-left rounded my-3 py-3 border" id="foot-om-div">
+        <div class="list-container">
+            <div class="list-header-container">
+                <div class="readme">
+                    <div id="waline"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--WalineEnd-->
+                        
 
     <div id="mask" style="display:none;"></div>
 <!--AdminStart-->
@@ -1752,4 +1764,11 @@ return false;
 <script src="//cdn.bootcdn.net/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <!--customScript-->
+<script>
+  new Waline({
+    el: '#waline',
+    path: location.pathname,
+    serverURL: 'https://waline-rosy.vercel.app'
+  });
+</script>
 </html>
