@@ -24,8 +24,11 @@
     <link rel="icon" href="<!--base_path-->favicon.ico" type="image/x-icon" />
     <link rel="icon" href="https://mistyhill-my.sharepoint.com/_layouts/15/images/odbfavicon.ico?rev=47" type="image/x-icon">
     <link href="//cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/haikesikejiqiang/picred@master/2020/05/29/3d-snow.css">
     <script src="//cdn.bootcdn.net/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/haikesikejiqiang/picred@master/2020/05/29/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/haikesikejiqiang/picred@master/2020/05/29/snow.js"></script>
     <style>
     a {
         text-decoration: none;
@@ -66,6 +69,7 @@
 
 <body>
     <div style="backgroudn-color:#aaa; z-index:-999; height:100vh; width:100%; position:absolute;opacity:0.5;"></div>
+    <div class="snow-container"></div>
     <div id="top-div">
         &nbsp;
     </div>
@@ -103,7 +107,7 @@
                                             <input class="form-control" id="login_input" name="password1" type="password" placeholder="<!--constStr@InputPassword-->">
                                         </div>
                                         <div class="modal-footer">
-                                                <input class="btn btn-primary" type="submit" value="<!--constStr@Login-->"></button>
+                                            <input class="btn btn-primary" type="submit" value="<!--constStr@Login-->" />
                                         </div>
                                     </form>
                                 </div>
@@ -328,10 +332,10 @@
         <ion-icon name="construct"></ion-icon>
     </a>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" data-toggle="modal" data-target="#renameModal" onclick="showdiv(event, 'rename',<!--filenum-->);"><ion-icon name="create"></ion-icon><!--constStr@Rename--></a></li>
-        <a class="dropdown-item" data-toggle="modal" data-target="#MoveModal" onclick="showdiv(event, 'move',<!--filenum-->);"><ion-icon name="move"></ion-icon><!--constStr@Move--></a></li>
-        <a class="dropdown-item" data-toggle="modal" data-target="#CopyModal" onclick="showdiv(event, 'copy',<!--filenum-->);"><ion-icon name="copy"></ion-icon><!--constStr@Copy--></a></li>
-        <a class="dropdown-item" data-toggle="modal" data-target="#DeleteModal" onclick="showdiv(event, 'delete',<!--filenum-->);"><ion-icon name="trash"></ion-icon><!--constStr@Delete--></a></li>
+        <a class="dropdown-item" data-toggle="modal" data-target="#renameModal" onclick="showdiv(event, 'rename',<!--filenum-->);"><ion-icon name="create"></ion-icon><!--constStr@Rename--></a>
+        <a class="dropdown-item" data-toggle="modal" data-target="#MoveModal" onclick="showdiv(event, 'move',<!--filenum-->);"><ion-icon name="move"></ion-icon><!--constStr@Move--></a>
+        <a class="dropdown-item" data-toggle="modal" data-target="#CopyModal" onclick="showdiv(event, 'copy',<!--filenum-->);"><ion-icon name="copy"></ion-icon><!--constStr@Copy--></a>
+        <a class="dropdown-item" data-toggle="modal" data-target="#DeleteModal" onclick="showdiv(event, 'delete',<!--filenum-->);"><ion-icon name="trash"></ion-icon><!--constStr@Delete--></a>
     </div>
 </div>    
 <!--AdminEnd-->
