@@ -1862,14 +1862,14 @@ function render_list($path = '', $files = [])
 
     //if (isset($_COOKIE['theme'])&&$_COOKIE['theme']!='') $theme = $_COOKIE['theme'];
     //if ( !file_exists(__DIR__ . $slash .'theme' . $slash . $theme) ) $theme = '';
-    if ($_SERVER['admin']) $theme = 'nchyn_grey.html';
+    if ($_SERVER['admin']) $theme = 'renexmoe.html';
     if ( $theme=='' ) {
         $tmp = getConfig('customTheme');
         if ( $tmp!='' ) $theme = $tmp;
     }
     if ( $theme=='' ) {
         $theme = getConfig('theme');
-        if ( $theme=='' || !file_exists(__DIR__ . $slash .'theme' . $slash . $theme) ) $theme = 'nchyn_grey.html';
+        if ( $theme=='' || !file_exists(__DIR__ . $slash .'theme' . $slash . $theme) ) $theme = 'renexmoe.html';
     }
     if (substr($theme,-4)=='.php') {
         @ob_start();
